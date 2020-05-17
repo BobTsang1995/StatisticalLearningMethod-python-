@@ -5,9 +5,9 @@
 @Software: PyCharm
 @Email   : bobtsang@bupt.edu.cn
 """
-### 感知机算法的手工实现（鸢尾花数据集）
-# mnist_train:80
-# mnist_test:20
+### K近邻算法的手工实现（鸢尾花数据集）
+# mnist_train:105
+# mnist_test:45
 # score:0.91
 
 ### 代码
