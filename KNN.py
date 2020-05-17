@@ -14,6 +14,8 @@
 import pandas as pd
 import numpy as np
 from sklearn import datasets
+import random
+import operator
 
 # 手写实现sklearn打乱数据集函数
 def Random_number(data_size):
