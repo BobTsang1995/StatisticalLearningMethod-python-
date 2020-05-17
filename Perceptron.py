@@ -158,11 +158,15 @@ if __name__ == '__main__':
     w, b = Perceptron(x_train, y_train)
     print(w, b)
 
-    print('原始标签', y_test)
+    print('真实值', y_test)
 
     score, pred = predict(x_test, y_test, w, b)
-    print('预测标签', pred)
+    print('预测值', pred)
 
     print('score', score)
+    
+# 真实值 [ 1 -1  1  1  1 -1 -1  1  1 -1]
+# 预测值 [1, -1, 1, 1, 1, -1, -1, 1, 1, -1]
+# score 1.0
 
     
