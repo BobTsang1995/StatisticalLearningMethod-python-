@@ -8,7 +8,7 @@
 ### 感知机算法的手工实现（鸢尾花数据集）
 # mnist_train:80
 # mnist_test:20
-# score:0.84
+# score:0.91
 
 ### 代码
 import pandas as pd
@@ -144,8 +144,14 @@ if __name__ == "__main__":
     # mms = MinMaxScaler()
     # x_train = mms.fit_transform(x_train)
     # x_test = mms.fit_transform(x_test)
-    res = KNN(x_test, x_train, y_train, 3)
+    res = KNN(x_test, x_train, y_train, 6)
     print('真实值：', y_test)
     print('预测值：', np.array(res))
     score = Score(res, y_test)
     print('测试集的精度：%.2f' % score)
+    
+# 真实值： [0 1 2 2 0 1 2 2 1 0 2 0 2 1 0 0 0 1 1 1 1 1 1 2 0 2 1 2 1 0 0 2 1 2 2 1 2
+#  1 0 0 1 1 1 2 1]
+# 预测值： [0 1 2 2 0 1 2 2 1 0 2 0 2 1 0 0 0 1 1 1 1 1 2 2 0 2 1 1 1 0 0 2 1 1 2 1 2
+#  2 0 0 1 1 1 2 1]
+# 测试集的精度：0.91
