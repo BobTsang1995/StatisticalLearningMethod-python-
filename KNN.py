@@ -1,5 +1,5 @@
 """
-@File    : Perceptron.py
+@File    : KNN.py
 @Time    : 2020-05-15 
 @Author  : BobTsang
 @Software: PyCharm
