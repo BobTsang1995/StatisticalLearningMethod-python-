@@ -55,6 +55,7 @@ def NaiveBayes_GNB(train,test):
     means = pd.DataFrame(mean, index=labels)
     stds = pd.DataFrame(std, index=labels)
 
+# 这里应该是由于数据集中的y的种类数量一样多，所以省略了p（y=i），如果不一样多的话，需要求的是p（y=i）x πp（x=xk|y=i）
     for j in range(test.shape[0]):
         # 当前测试实例
         iset = test.iloc[j, :-1].tolist()
