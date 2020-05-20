@@ -5,6 +5,13 @@
 @Software: PyCharm
 @Email   : bobtsang@bupt.edu.cn
 """
+# 该决策树代码只涉及ID3算法，C4.5和CART没时间解释了，赶紧上车
+# 	ID3：使用信息增益进行特征选择
+# 	C4.5：信息增益率
+# 	CART：基尼系数 
+# 	一个特征的信息增益(或信息增益率，或基尼系数)越大，表明特征对样本的熵的减少能力更强（越快到达叶子结点），这个特征使得数据由不
+# 确定性到确定性的能力越强。所以选分裂点要选该节点衡量系数最大的。
+
 import numpy as np
 import pandas as pd
 from sklearn import datasets
