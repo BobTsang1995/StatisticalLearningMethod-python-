@@ -1,6 +1,6 @@
 """
 @File    : HMM.py
-@Time    : 2020-05-28 
+@Time    : 2020-06-01 
 @Author  : BobTsang
 @Software: PyCharm
 @Email   : bobtsang@bupt.edu.cn
