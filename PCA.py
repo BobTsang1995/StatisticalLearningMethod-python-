@@ -103,3 +103,12 @@ if __name__ == '__main__':
 
     print(VT.T@X.T)
     print(VT2.T@X.T)
+
+# 可以发现，标准化不同，得到的最后主成分也有不同
+    X_norm = normalization(X.T)
+    X_new = createX(X_norm)
+    VT = svd_k(X_new, 2)
+    VT2 = svd(X_new, 0.85)
+
+    print(VT.T @ X.T)
+    print(VT2.T @ X.T)
